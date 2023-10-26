@@ -5,6 +5,33 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.page {
+  background-color: white;
+  padding: 0;
+}
+
+.page h3 {
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.staff {
+  background-color: rgb(186, 186, 221);
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+  width: 250px;
+}
+
+.staff h2 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.staff p {
+  margin: 5px 0;
+}
+
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
