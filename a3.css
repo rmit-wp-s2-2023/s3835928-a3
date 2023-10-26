@@ -1,0 +1,41 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: brown;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+.footer a:hover {
+  color: #dad2b2;
+  text-decoration: none;
+}
+
+.footer h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.footer div {
+  border-right: 1px solid #555;
+  padding: 0 20px;
+}
+
+.footer div:last-child {
+  border-right: none;
+}
+
+.sitemap {
+  list-style: none;
+  padding: 0;
+}
+
+.sitemap li {
+  margin: 5px 0;
+}
