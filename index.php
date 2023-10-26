@@ -15,17 +15,7 @@
 <body>
     <div class="page">
         <h3>Staff Members</h3>
-        <?php
-        $data = json_decode($response, true);
-        foreach ($data as $items) {
-            echo '<div class="staff">';
-            echo '<h2>' . $items['firstName'] . ' ' . $items['lastName'] . '</h2>';
-            echo '<p>Staff ID: ' . $items['staffID'] . '</p>';
-            echo '<p>Email: ' . $items['email'] . '</p>';
-            echo '</div>';
-        }
-        ?>
+        <?php require_once("rest.php") ?>
     </div>
-
     <?php require_once("sitemap.php") ?>
 </body>
