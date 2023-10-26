@@ -4,7 +4,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <?php require_once("functions.php") ?>
         <title>Assignment 3</title>
         <link rel="stylesheet" href="a3.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -14,7 +13,9 @@
 
 <body>
     <div class="form-container">
-        <form method="post" action="formhandler.php">
+        <h2>Create a Course</h2>
+        <?php require_once("functions.php") ?>
+        <form method="post" action="index.php">
             <label for="course_id">Course ID:</label>
             <input type="text" id="course_id" name="course_id"
                 title="Course ID must start with COSC followed by 4 digits">

@@ -16,7 +16,6 @@
     <?php
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
-        echo "Displaying Staff ID for " . htmlspecialchars($id);
     } else {
         echo "Staff ID is not found.";
     }
@@ -35,11 +34,12 @@
 
     $course = json_decode($subject, true);
     if ($id === "e12345" || $id === "e54321" || $id === "e56789") {
+        echo '<div class="staff">';
         echo "Staff ID: " . $course["staffID"] . "<br>";
         echo "First Name: " . $course["firstName"] . "<br>";
         echo "Last Name: " . $course["lastName"] . "<br>";
         echo "Email: " . $course["email"] . "<br>";
-        echo "Courses:<br>";
+        echo "<ul>Courses:<br>";
         foreach ($course["courses"] as $courses) {
             echo "<ul>";
             echo "<li>Course ID: " . $courses["courseID"] . "</li>";
@@ -49,8 +49,9 @@
             echo "<li>Coordinator: " . $courses["coordinator"] . "</li><br>";
             echo "</ul>";
         }
+        echo '</div>';
     } else {
-        echo "id is not found";
+        echo "ID is not found";
     }
     ?>
     <?php require_once("sitemap.php") ?>

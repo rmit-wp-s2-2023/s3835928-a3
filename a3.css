@@ -73,3 +73,13 @@
 .sitemap li {
   margin-left: 5px 0;
 }
+
+.form-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
